@@ -6,9 +6,7 @@ export default function Card({ card, handleChoice, flipped, disabled }) {
     if (!disabled) {
       handleChoice(card)
     }
-    
   }
-  
   
   return (
     <div>
@@ -20,7 +18,6 @@ export default function Card({ card, handleChoice, flipped, disabled }) {
                 src="img/wilco.jpeg" 
                 onClick={handleClick} 
                 alt="card back"
-
               />
             </div>
           </div>

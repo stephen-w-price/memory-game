@@ -18,8 +18,7 @@ function App() {
   const [choiceTwo, setChoiceTwo] = useState(null)
   const [disabled, setDisabled] = useState(false)
 
-  console.log(choiceOne)
-  console.log(choiceTwo)
+
   
   // shuffle cards
   const shuffleCards = () => {
@@ -40,7 +39,6 @@ function App() {
 const handleChoice = (card) => {
   choiceOne ? setChoiceTwo(card) : setChoiceOne(card)
   // cannot perform evaluation here`
-  
 }
 
 useEffect(() => {
